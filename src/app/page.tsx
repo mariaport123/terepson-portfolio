@@ -1,5 +1,6 @@
 "use client";
 
+import { useState } from "react";
 import { motion } from "motion/react";
 
 const projects = [
@@ -7,7 +8,7 @@ const projects = [
     number: "01",
     title: "BETSAFE X NUBLU X OTT TÄNAK TVC",
     category: "COMMERCIALS",
-    year: "",
+    role: "COSTUME DESIGNER",
     platform: "VIMEO",
     videoId: "764260078",
     videoUrl: "https://vimeo.com/764260078",
@@ -16,92 +17,105 @@ const projects = [
   },
   {
     number: "02",
-    title: "PROJECT 02",
+    title: "Telia XMAS (Director's cut)",
     category: "COMMERCIALS",
-    year: "",
+    role: "STYLIST",
     platform: "VIMEO",
     videoId: "738537241",
     videoUrl: "https://vimeo.com/738537241",
+    thumbnail: "/projects/commercial-02.jpg",
     size: "small",
   },
   {
     number: "03",
-    title: "PROJECT 03",
+    title: "LIDL",
     category: "COMMERCIALS",
-    year: "",
+    role: "COSTUME DESIGNER",
     platform: "VIMEO",
     videoId: "773240651",
     videoUrl: "https://vimeo.com/773240651",
+    thumbnail: "/projects/commercial-03.jpg",
     size: "small",
   },
   {
     number: "04",
-    title: "PROJECT 04",
+    title: "Initiative Milch",
     category: "COMMERCIALS",
-    year: "",
+    role: "STYLIST",
     platform: "VIMEO",
     videoId: "976320503",
     videoUrl: "https://vimeo.com/976320503",
+    thumbnail: "/projects/commercial-04.jpg",
     size: "large",
   },
   {
     number: "05",
-    title: "PROJECT 05",
+    title: "Telia Greener Future Director's Cut",
     category: "COMMERCIALS",
+    role: "STYLIST",
     year: "",
     platform: "VIMEO",
     videoId: "485485452",
     videoUrl: "https://vimeo.com/485485452",
-    size: "small",
+    thumbnail: "/projects/commercial-05.jpg",
+    size: "large",
   },
   {
     number: "06",
-    title: "PROJECT 06",
+    title: "Memorieslab",
     category: "COMMERCIALS",
+    role: "STYLIST",
     year: "",
     platform: "YOUTUBE",
     videoId: "zwFXqEnzXNY",
     videoUrl: "https://www.youtube.com/watch?v=zwFXqEnzXNY",
-    size: "large",
+    thumbnail: "/projects/commercial-06.jpg",
+    size: "small",
   },
   {
     number: "07",
-    title: "PROJECT 07",
+    title: "Starman - Children",
     category: "COMMERCIALS",
+    role: "STYLIST",
     year: "",
     platform: "YOUTUBE",
     videoId: "mD0uMYnJCaU",
     videoUrl: "https://www.youtube.com/watch?v=mD0uMYnJCaU",
+    thumbnail: "/projects/commercial-07.jpg",
     size: "small",
   },
   {
     number: "08",
-    title: "PROJECT 08",
+    title: "Starman - Film",
     category: "COMMERCIALS",
-    year: "",
+    role: "STYLIST",
+    year: "Stylist",
     platform: "YOUTUBE",
     videoId: "njNdvgmAGm4",
     videoUrl: "https://www.youtube.com/watch?v=njNdvgmAGm4",
-    size: "small",
+    thumbnail: "/projects/commercial-08.jpg",
+    size: "large",
   },
   {
     number: "09",
-    title: "PROJECT 09",
+    title: "Ibis Brandy",
     category: "COMMERCIALS",
-    year: "",
+    role: "STYLIST",
     platform: "YOUTUBE",
     videoId: "RIdRwOHjQxw",
     videoUrl: "https://www.youtube.com/watch?v=RIdRwOHjQxw",
+    thumbnail: "/projects/commercial-09.jpg",
     size: "large",
   },
   {
     number: "10",
-    title: "PROJECT 10",
+    title: "Aava Peili",
     category: "COMMERCIALS",
-    year: "",
+    role: "STYLIST",
     platform: "VIMEO",
     videoId: "643537019",
     videoUrl: "https://vimeo.com/643537019",
+    thumbnail: "/projects/commercial-10.jpg",
     size: "small",
   },
 ];
@@ -154,6 +168,12 @@ function VideoCard({
           <span>{project.category}</span>
 
           <h3>{project.title}</h3>
+
+          {project.role && (
+            <p className="work-role">
+              {project.role}
+            </p>
+          )}
         </div>
 
         <div className="work-meta">
@@ -167,6 +187,24 @@ function VideoCard({
 }
 
 export default function Home() {
+  const [selectedCategory, setSelectedCategory] = useState("ALL");
+
+  const categories = [
+    "ALL",
+    "COMMERCIALS",
+    "MUSIC VIDEOS",
+    "FILM",
+    "PORTRAITS",
+    "PRINTS",
+  ];
+
+  const filteredProjects =
+    selectedCategory === "ALL"
+      ? projects
+      : projects.filter(
+        (project) => project.category === selectedCategory
+      );
+
   return (
     <main>
       {/* =================================
@@ -200,7 +238,7 @@ export default function Home() {
             href="#"
             className="site-logo"
           >
-            TEREPSON
+            JÖRGEN TEREPSON
           </a>
 
           <nav className="main-nav">
@@ -221,34 +259,27 @@ export default function Home() {
             CATEGORIES
         ================================= */}
 
-        <div
-          className="portfolio-intro"
-          id="work"
-        >
+        <div className="portfolio-intro" id="work">
+          <p className="work-heading">
+            SELECTED WORK
+          </p>
+
           <div className="categories">
-            <button className="active">
-              ALL
-            </button>
-
-            <button>
-              COMMERCIALS
-            </button>
-
-            <button>
-              MUSIC VIDEOS
-            </button>
-
-            <button>
-              FILM
-            </button>
-
-            <button>
-              PORTRAITS
-            </button>
-
-            <button>
-              PRINTS
-            </button>
+            {categories.map((category) => (
+              <button
+                key={category}
+                className={
+                  selectedCategory === category
+                    ? "active"
+                    : ""
+                }
+                onClick={() =>
+                  setSelectedCategory(category)
+                }
+              >
+                {category}
+              </button>
+            ))}
           </div>
         </div>
 
@@ -257,7 +288,7 @@ export default function Home() {
         ================================= */}
 
         <div className="work-grid">
-          {projects.map((project) => (
+          {filteredProjects.map((project) => (
             <VideoCard
               key={project.number}
               project={project}
@@ -306,8 +337,8 @@ export default function Home() {
               CONTACT
             </p>
 
-            <a href="mailto:hello@terepson.com">
-              hello@terepson.com
+            <a href="mailto:terepson@gmail.com">
+              terepson@gmail.com
             </a>
           </div>
 
