@@ -326,6 +326,28 @@ body {
 }
 
 /* =================================
+   IMAGE GALLERIES
+================================= */
+
+.image-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+  margin-top: 5rem;
+}
+
+.gallery-image {
+  width: 100%;
+}
+
+.gallery-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+
+/* =================================
    VIDEO CARD
 ================================= */
 
@@ -537,6 +559,10 @@ body {
   .work-item-small {
     grid-column: span 5;
   }
+
+  .image-gallery {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 /* =================================
@@ -556,6 +582,12 @@ body {
     width: 70px;
     top: 47%;
     left: 61%;
+  }
+
+  .image-gallery {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    margin-top: 3.5rem;
   }
 
   /* ================================
