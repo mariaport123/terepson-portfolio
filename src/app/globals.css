@@ -387,34 +387,6 @@ body {
   letter-spacing: -0.08em;
 }
 
-/* =================================
-   PLAY BUTTON
-================================= */
-
-.play-button {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  display: flex;
-  align-items: center;
-  gap: 0.7rem;
-  padding: 0.8rem 1rem;
-  color: var(--black);
-  background: var(--cream);
-  font-size: 0.65rem;
-  font-weight: 700;
-  letter-spacing: 0.12em;
-  transition:
-    background 0.3s ease,
-    color 0.3s ease,
-    transform 0.3s ease;
-}
-
-.play-arrow {
-  font-size: 1rem;
-  font-weight: 400;
-}
 
 /* =================================
    HOVER
@@ -426,12 +398,6 @@ body {
 
 .video-card:hover .thumbnail-image {
   transform: scale(1.02);
-}
-
-.video-card:hover .play-button {
-  color: var(--white);
-  background: var(--red);
-  transform: translate(-50%, -50%) scale(1.05);
 }
 
 /* =================================
@@ -480,6 +446,21 @@ body {
 
 .work-meta span {
   white-space: nowrap;
+}
+
+.watch-link {
+  color: inherit;
+  text-decoration: none;
+  font-size: 0.62rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.watch-link:hover {
+  color: #8f2027;
+  text-decoration: none;
 }
 
 /* =================================
@@ -712,18 +693,8 @@ body {
     font-size: 0.58rem;
   }
 
-  /* ================================
-     PLAY BUTTON
-  ================================= */
-
-  .play-button {
-    padding: 0.65rem 0.8rem;
-    gap: 0.5rem;
+  .watch-link {
     font-size: 0.58rem;
-  }
-
-  .play-arrow {
-    font-size: 0.85rem;
   }
 
   /* ================================
