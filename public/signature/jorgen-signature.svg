@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 411 548">
+  <g fill="none" stroke="#ff2020" stroke-linecap="round" stroke-linejoin="round">
+    <path id="signature-1" stroke-width="7"
+      d="M 2 313
+         C 55 313, 128 314, 205 323" />
+    <path id="signature-2" stroke-width="7"
+      d="M 35 312
+         C 57 284, 93 224, 117 182
+         C 127 207, 151 233, 178 249
+         C 207 265, 257 267, 286 285
+         C 309 299, 316 315, 311 342
+         C 304 381, 281 416, 247 448
+         C 213 478, 166 505, 92 544" />
+    <path id="signature-3" stroke-width="8"
+      d="M 117 345
+         C 151 287, 184 226, 218 169
+         C 253 109, 294 45, 341 3" />
+    <path id="signature-4" stroke-width="5"
+      d="M 245 144
+         C 289 149, 349 169, 408 199" />
+  </g>
+</svg>

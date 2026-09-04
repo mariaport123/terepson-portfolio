@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { motion } from "motion/react";
 
 const projects = [
@@ -186,8 +186,38 @@ function VideoCard({
   );
 }
 
+/* =================================
+   ANIMATED SIGNATURE
+================================= */
+
+function AnimatedSignature() {
+  return (
+    <motion.img
+      src="/signature/jorgen-signature.png"
+      alt="Jörgen Terepson signature"
+      className="intro-signature"
+      initial={{ clipPath: "inset(0 100% 0 0)" }}
+      animate={{ clipPath: "inset(0 0% 0 0)" }}
+      transition={{
+        duration: 1.8,
+        delay: 0.5,
+        ease: "easeInOut",
+      }}
+    />
+  );
+}
+
 export default function Home() {
   const [selectedCategory, setSelectedCategory] = useState("ALL");
+  const [introVisible, setIntroVisible] = useState(true);
+
+  useEffect(() => {
+    const timer = window.setTimeout(() => {
+      setIntroVisible(false);
+    }, 2700);
+
+    return () => window.clearTimeout(timer);
+  }, []);
 
   const categories = [
     "ALL",
@@ -211,18 +241,18 @@ export default function Home() {
           INTRO
       ================================= */}
 
-      <section className="intro">
+      <motion.section
+        className={`intro ${!introVisible ? "intro-hidden" : ""
+          }`}
+      >
         <div className="intro-content">
           <h1 className="intro-title">
             TEREPSON
           </h1>
 
-          <button className="enter">
-            ENTER
-            <span aria-hidden="true" />
-          </button>
+          <AnimatedSignature />
         </div>
-      </section>
+      </motion.section>
 
       {/* =================================
           PORTFOLIO
@@ -234,12 +264,20 @@ export default function Home() {
         ================================= */}
 
         <header className="site-header">
-          <a
-            href="#"
-            className="site-logo"
-          >
-            JÖRGEN TEREPSON
-          </a>
+          <div className="site-brand">
+            <a
+              href="#"
+              className="site-logo"
+            >
+              JÖRGEN TEREPSON
+            </a>
+
+            <img
+              src="/signature/jorgen-signature.png"
+              alt=""
+              className="header-signature"
+            />
+          </div>
 
           <nav className="main-nav">
             <a href="#work">WORK</a>
@@ -259,7 +297,10 @@ export default function Home() {
             CATEGORIES
         ================================= */}
 
-        <div className="portfolio-intro" id="work">
+        <div
+          className="portfolio-intro"
+          id="work"
+        >
           <p className="work-heading">
             SELECTED WORK
           </p>
