@@ -7,17 +7,23 @@ import Intro from "@/components/Intro";
 import Header from "@/components/Header";
 import CategoryFilter from "@/components/CategoryFilter";
 import ImageGallery from "@/components/ImageGallery";
+import CategoryOverview from "@/components/CategoryOverview";
 import About from "@/components/About";
 import Footer from "@/components/Footer";
 
 const portraitImages = [
   "/projects/portraits/IMG_3236.JPG",
+  "/projects/portraits/Noep_SilverTõnisson_press_012_19082026.JPEG",
   "/projects/portraits/192831E3-0B8B-4AB1-8DB4-08CEB0EA0632.jpg",
   "/projects/portraits/541D6D4C-2010-49AE-9D93-74C8D0753EDE.JPG",
   "/projects/portraits/469098156_18479221873002071_6245232464884931852_n.JPG",
+  "/projects/portraits/742215189_18597592072024645_4568046529529639109_n.jpg",
   "/projects/portraits/IMG_1450.JPG",
   "/projects/portraits/IMG_0039.JPG",
   "/projects/portraits/IMG_1957.JPG",
+  "/projects/portraits/Eleryn.png",
+  "/projects/portraits/Tanel.png",
+  "/projects/portraits/IMG_0249.JPG",
   "/projects/portraits/IMG_1958.PNG",
   "/projects/portraits/IMG_1225.PNG",
   "/projects/portraits/IMG_2810.PNG",
@@ -27,7 +33,6 @@ const portraitImages = [
   "/projects/portraits/Snapinsta.app_469096868_1743693516364895_3372938380387957484_n_1080.JPG",
   "/projects/portraits/Snapinsta.app_469196019_1580737449224435_4308907313570392572_n_1080.JPG",
   "/projects/portraits/IMG_0246.JPG",
-  "/projects/portraits/IMG_0249.JPG",
 ];
 
 const printImages = [
@@ -38,11 +43,13 @@ const printImages = [
   "/projects/prints/IMG_1819.PNG",
   "/projects/prints/IMG_1820.PNG",
   "/projects/prints/IMG_1821.PNG",
+  "/projects/prints/475988146_944098621159301_1258678288644805473_n.jpg",
+  "/projects/prints/476164096_944098604492636_8638420971120247318_n.jpg",
+  "/projects/prints/476187218_944098357825994_5594452073925359476_n.jpg",
 ];
 
 export default function Home() {
   const [selectedCategory, setSelectedCategory] = useState("ALL");
-
   const [introVisible, setIntroVisible] = useState(true);
 
   useEffect(() => {
@@ -66,22 +73,17 @@ export default function Home() {
     selectedCategory === "ALL"
       ? projects
       : projects.filter(
-          (project) => project.category === selectedCategory
-        );
+        (project) => project.category === selectedCategory
+      );
 
   const showVideoProjects =
-    selectedCategory === "ALL" ||
     selectedCategory === "COMMERCIALS" ||
     selectedCategory === "MUSIC VIDEOS" ||
     selectedCategory === "FILM";
 
-  const showPortraits =
-    selectedCategory === "ALL" ||
-    selectedCategory === "PORTRAITS";
+  const showPortraits = selectedCategory === "PORTRAITS";
 
-  const showPrints =
-    selectedCategory === "ALL" ||
-    selectedCategory === "PRINTS";
+  const showPrints = selectedCategory === "PRINTS";
 
   return (
     <main>
@@ -100,54 +102,76 @@ export default function Home() {
             HEADER
         ================================= */}
 
-        <Header />
+        <Header
+          onWorkClick={() => {
+            setSelectedCategory("ALL");
 
-        {/* =================================
-            CATEGORIES
-        ================================= */}
-
-        <CategoryFilter
-          categories={categories}
-          selectedCategory={selectedCategory}
-          onCategoryChange={setSelectedCategory}
+            window.setTimeout(() => {
+              document.getElementById("work")?.scrollIntoView({
+                behavior: "smooth",
+              });
+            }, 0);
+          }}
         />
 
         {/* =================================
-            VIDEO WORK
+            WORK
         ================================= */}
 
-        {showVideoProjects && (
-          <div className="work-grid">
-            {filteredProjects.map((project) => (
-              <VideoCard
-                key={project.number}
-                project={project}
-              />
-            ))}
-          </div>
-        )}
-
-        {/* =================================
-            PORTRAITS
-        ================================= */}
-
-        {showPortraits && (
-          <ImageGallery
-            images={portraitImages}
-            variant="portraits"
+        <section id="work">
+          <CategoryFilter
+            categories={categories}
+            selectedCategory={selectedCategory}
+            onCategoryChange={setSelectedCategory}
           />
-        )}
 
-        {/* =================================
-            PRINTS
-        ================================= */}
+          {/* ---------------------------------
+              ALL — CATEGORY OVERVIEW
+          --------------------------------- */}
 
-        {showPrints && (
-          <ImageGallery
-            images={printImages}
-            variant="prints"
-          />
-        )}
+          {selectedCategory === "ALL" && (
+            <CategoryOverview
+              onCategoryChange={setSelectedCategory}
+            />
+          )}
+
+          {/* ---------------------------------
+              VIDEO WORK
+          --------------------------------- */}
+
+          {showVideoProjects && (
+            <div className="work-grid">
+              {filteredProjects.map((project) => (
+                <VideoCard
+                  key={project.number}
+                  project={project}
+                />
+              ))}
+            </div>
+          )}
+
+          {/* ---------------------------------
+              PORTRAITS
+          --------------------------------- */}
+
+          {showPortraits && (
+            <ImageGallery
+              images={portraitImages}
+              variant="portraits"
+            />
+          )}
+
+          {/* ---------------------------------
+              PRINTS
+          --------------------------------- */}
+
+          {showPrints && (
+            <ImageGallery
+              images={printImages}
+              variant="prints"
+            />
+          )}
+        </section>
 
         {/* =================================
             ABOUT

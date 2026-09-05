@@ -1,6 +1,10 @@
 "use client";
 
-export default function Header() {
+type HeaderProps = {
+  onWorkClick: () => void;
+};
+
+export default function Header({ onWorkClick }: HeaderProps) {
   return (
     <header className="site-header">
       <div className="site-brand">
@@ -19,8 +23,18 @@ export default function Header() {
       </div>
 
       <nav className="main-nav">
-        <a href="#work">WORK</a>
+        <a
+          href="#work"
+          onClick={(event) => {
+            event.preventDefault();
+            onWorkClick();
+          }}
+        >
+          WORK
+        </a>
+
         <a href="#about">ABOUT</a>
+
         <a href="#contact">CONTACT</a>
       </nav>
 

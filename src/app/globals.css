@@ -56,10 +56,6 @@ body {
   text-align: center;
 }
 
-/* =================================
-   TEREPSON
-================================= */
-
 .intro-title {
   position: absolute;
   top: 50%;
@@ -102,6 +98,10 @@ body {
   pointer-events: none;
 }
 
+/* =================================
+   SITE BRAND
+================================= */
+
 .site-brand {
   position: relative;
   display: inline-block;
@@ -116,58 +116,6 @@ body {
   z-index: 2;
   pointer-events: none;
   user-select: none;
-}
-
-/* =================================
-   ENTER
-================================= */
-
-.enter {
-  position: absolute;
-  top: calc(50% + 12rem);
-  left: 50%;
-  transform: translateX(-50%);
-  margin: 0;
-  padding: 0 0 4.5rem;
-  border: 0;
-  background: transparent;
-  color: var(--white);
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 0.75rem;
-  font-weight: 700;
-  letter-spacing: 0.3em;
-  cursor: pointer;
-}
-
-/* =================================
-   BRIGHT RED VERTICAL LINE
-================================= */
-
-.enter span {
-  position: absolute;
-  left: 50%;
-  bottom: 0;
-  width: 2px;
-  height: 4rem;
-  background: var(--bright-red);
-  transform: translateX(-50%);
-  transition:
-    height 0.35s ease,
-    width 0.35s ease;
-}
-
-.enter:hover span {
-  width: 3px;
-  height: 5.5rem;
-}
-
-/* =================================
-   ACCESSIBILITY
-================================= */
-
-.enter:focus-visible {
-  outline: 1px solid var(--white);
-  outline-offset: 8px;
 }
 
 /* =================================
@@ -186,9 +134,13 @@ body {
 ================================= */
 
 .site-header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
   height: 100px;
   display: flex;
   align-items: center;
+  background: var(--cream);
   border-bottom: 1px solid rgba(5, 5, 5, 0.15);
 }
 
@@ -326,6 +278,106 @@ body {
 }
 
 /* =================================
+   ALL — CATEGORY OVERVIEW
+================================= */
+
+.category-overview {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 0.75rem;
+  margin-top: 1rem;
+}
+
+.category-overview-card {
+  position: relative;
+  display: block;
+  min-width: 0;
+  padding: 0;
+  border: 0;
+  background: #d5d0c7;
+  overflow: hidden;
+  cursor: pointer;
+  text-align: left;
+}
+
+.category-overview-card img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.category-overview-card:hover img {
+  transform: scale(1.03);
+}
+
+.category-overview-large {
+  grid-column: span 8;
+  aspect-ratio: 16 / 10;
+}
+
+.category-overview-small {
+  grid-column: span 4;
+  aspect-ratio: 4 / 5;
+}
+
+.category-overview-film {
+  grid-column: span 5;
+  aspect-ratio: 16 / 10;
+}
+
+.category-overview-portraits {
+  grid-column: span 7;
+  aspect-ratio: 16 / 10;
+}
+
+.category-overview-prints {
+  grid-column: span 12;
+  aspect-ratio: 16 / 5;
+}
+
+.category-overview-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to top,
+    rgba(0, 0, 0, 0.55),
+    rgba(0, 0, 0, 0) 55%
+  );
+  pointer-events: none;
+}
+
+.category-overview-name {
+  position: absolute;
+  left: 1rem;
+  bottom: 1rem;
+  color: var(--white);
+  font-size: 0.65rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  z-index: 1;
+}
+
+.category-overview-arrow {
+  position: absolute;
+  right: 1rem;
+  bottom: 0.8rem;
+  color: var(--white);
+  font-size: 1.1rem;
+  line-height: 1;
+  z-index: 1;
+}
+
+.category-overview-portraits img {
+  object-position: center 15%;
+}
+
+.category-overview-prints img {
+  object-position: center 10%;
+}
+
+/* =================================
    IMAGE GALLERIES
 ================================= */
 
@@ -338,6 +390,11 @@ body {
 
 .gallery-image {
   width: 100%;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+  overflow: hidden;
 }
 
 .gallery-image img {
@@ -346,6 +403,82 @@ body {
   height: auto;
 }
 
+/* =================================
+   PORTRAITS GALLERY
+================================= */
+
+.image-gallery-portraits .gallery-image {
+  aspect-ratio: 4 / 5;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.image-gallery-portraits .gallery-image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.image-gallery-portraits .gallery-image:hover img {
+  transform: scale(1.02);
+}
+
+/* =================================
+   PRINTS GALLERY
+================================= */
+
+.image-gallery-prints .gallery-image img {
+  transition: transform 0.5s ease;
+}
+
+.image-gallery-prints .gallery-image:hover img {
+  transform: scale(1.02);
+}
+
+/* =================================
+   IMAGE LIGHTBOX
+================================= */
+
+.image-lightbox {
+  position: fixed;
+  inset: 0;
+  z-index: 200;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 3rem;
+  background: rgba(5, 5, 5, 0.92);
+  cursor: zoom-out;
+}
+
+.image-lightbox-image {
+  display: block;
+  max-width: 92vw;
+  max-height: 92vh;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  cursor: default;
+}
+
+.image-lightbox-close {
+  position: absolute;
+  top: 1.5rem;
+  right: 2rem;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: var(--white);
+  font-size: 2rem;
+  font-weight: 300;
+  line-height: 1;
+  cursor: pointer;
+}
 
 /* =================================
    VIDEO CARD
@@ -409,9 +542,8 @@ body {
   letter-spacing: -0.08em;
 }
 
-
 /* =================================
-   HOVER
+   VIDEO HOVER
 ================================= */
 
 .video-card:hover .thumbnail-placeholder {
@@ -433,7 +565,7 @@ body {
   padding-top: 1rem;
 }
 
-.work-info>div:first-child {
+.work-info > div:first-child {
   min-width: 0;
 }
 
@@ -530,7 +662,7 @@ body {
   font-size: 1.4rem;
 }
 
-.site-footer>span {
+.site-footer > span {
   font-size: 0.65rem;
   letter-spacing: 0.1em;
 }
@@ -540,10 +672,6 @@ body {
 ================================= */
 
 @media (max-width: 900px) {
-  .portfolio {
-    padding: 0 4vw;
-  }
-
   .main-nav {
     gap: 2rem;
   }
@@ -570,33 +698,9 @@ body {
 ================================= */
 
 @media (max-width: 700px) {
-  .portfolio {
-    padding: 0 5vw;
-  }
-
-  .header-signature {
-    width: 34px;
-  }
-
-  .intro-signature {
-    width: 70px;
-    top: 47%;
-    left: 61%;
-  }
-
-  .image-gallery {
-    grid-template-columns: 1fr;
-    gap: 1rem;
-    margin-top: 3.5rem;
-  }
-
-  /* ================================
+  /* ---------------------------------
      INTRO
-  ================================= */
-
-  .intro {
-    min-height: 100svh;
-  }
+  --------------------------------- */
 
   .intro-title {
     width: 100%;
@@ -606,24 +710,19 @@ body {
     text-align: center;
   }
 
-  .enter {
-    top: calc(50% + 7rem);
-    font-size: 0.65rem;
-    letter-spacing: 0.25em;
-    padding-bottom: 3.5rem;
+  .intro-signature {
+    width: 70px;
+    top: 47%;
+    left: 61%;
   }
 
-  .enter span {
-    height: 3rem;
-  }
-
-  .enter:hover span {
-    height: 4rem;
-  }
-
-  /* ================================
+  /* ---------------------------------
      HEADER
-  ================================= */
+  --------------------------------- */
+
+  .portfolio {
+    padding: 0 5vw;
+  }
 
   .site-header {
     height: 76px;
@@ -633,6 +732,10 @@ body {
     max-width: 70%;
     font-size: clamp(1.7rem, 7vw, 2.8rem);
     letter-spacing: -0.05em;
+  }
+
+  .header-signature {
+    width: 34px;
   }
 
   .main-nav {
@@ -647,9 +750,9 @@ body {
     letter-spacing: 0.12em;
   }
 
-  /* ================================
-     SELECTED WORK + CATEGORIES
-  ================================= */
+  /* ---------------------------------
+     PORTFOLIO INTRO
+  --------------------------------- */
 
   .portfolio-intro {
     padding: 1rem 0 2.5rem;
@@ -659,6 +762,10 @@ body {
     margin-bottom: 1.25rem;
     font-size: 0.6rem;
   }
+
+  /* ---------------------------------
+     CATEGORIES
+  --------------------------------- */
 
   .categories {
     column-gap: 1.2rem;
@@ -670,12 +777,70 @@ body {
     letter-spacing: 0.06em;
   }
 
-  /* ================================
+  /* ---------------------------------
+     ALL — CATEGORY OVERVIEW
+  --------------------------------- */
+
+  .category-overview {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .category-overview-large,
+  .category-overview-small,
+  .category-overview-film,
+  .category-overview-portraits,
+  .category-overview-prints {
+    grid-column: span 1;
+    aspect-ratio: 16 / 10;
+  }
+
+  .category-overview-name {
+    left: 0.8rem;
+    bottom: 0.8rem;
+    font-size: 0.58rem;
+  }
+
+  .category-overview-arrow {
+    right: 0.8rem;
+    bottom: 0.65rem;
+    font-size: 1rem;
+  }
+
+  /* ---------------------------------
+     IMAGE GALLERIES
+  --------------------------------- */
+
+  .image-gallery {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    margin-top: 3.5rem;
+  }
+
+  /* ---------------------------------
+     IMAGE LIGHTBOX
+  --------------------------------- */
+
+  .image-lightbox {
+    padding: 1rem;
+  }
+
+  .image-lightbox-image {
+    max-width: 94vw;
+    max-height: 90vh;
+  }
+
+  .image-lightbox-close {
+    top: 1rem;
+    right: 1rem;
+    font-size: 1.75rem;
+  }
+
+  /* ---------------------------------
      WORK GRID
-  ================================= */
+  --------------------------------- */
 
   .work-grid {
-    display: grid;
     grid-template-columns: 1fr;
     gap: 3.5rem;
   }
@@ -689,9 +854,9 @@ body {
     aspect-ratio: 16 / 10;
   }
 
-  /* ================================
+  /* ---------------------------------
      WORK INFO
-  ================================= */
+  --------------------------------- */
 
   .work-info {
     padding-top: 0.8rem;
@@ -729,9 +894,9 @@ body {
     font-size: 0.58rem;
   }
 
-  /* ================================
+  /* ---------------------------------
      ABOUT
-  ================================= */
+  --------------------------------- */
 
   .about {
     display: block;
@@ -752,9 +917,9 @@ body {
     line-height: 1.45;
   }
 
-  /* ================================
+  /* ---------------------------------
      FOOTER
-  ================================= */
+  --------------------------------- */
 
   .site-footer {
     display: block;
@@ -766,7 +931,7 @@ body {
     word-break: break-word;
   }
 
-  .site-footer>span {
+  .site-footer > span {
     display: block;
     margin-top: 5rem;
     font-size: 0.6rem;
