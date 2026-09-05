@@ -11,7 +11,7 @@ export const projects = [
         platform: "VIMEO",
         videoId: "764260078",
         videoUrl: "https://vimeo.com/764260078",
-        thumbnail: "/projects/commercial-01.jpg",
+        thumbnail: "/projects/commercials/commercial-01.jpg",
         size: "large",
     },
     {
@@ -22,7 +22,7 @@ export const projects = [
         platform: "VIMEO",
         videoId: "738537241",
         videoUrl: "https://vimeo.com/738537241",
-        thumbnail: "/projects/commercial-02.jpg",
+        thumbnail: "/projects/commercials/commercial-02.jpg",
         size: "small",
     },
     {
@@ -33,7 +33,7 @@ export const projects = [
         platform: "VIMEO",
         videoId: "773240651",
         videoUrl: "https://vimeo.com/773240651",
-        thumbnail: "/projects/commercial-03.jpg",
+        thumbnail: "/projects/commercials/commercial-03.jpg",
         size: "small",
     },
     {
@@ -44,7 +44,7 @@ export const projects = [
         platform: "VIMEO",
         videoId: "976320503",
         videoUrl: "https://vimeo.com/976320503",
-        thumbnail: "/projects/commercial-04.jpg",
+        thumbnail: "/projects/commercials/commercial-04.jpg",
         size: "large",
     },
     {
@@ -56,7 +56,7 @@ export const projects = [
         platform: "VIMEO",
         videoId: "485485452",
         videoUrl: "https://vimeo.com/485485452",
-        thumbnail: "/projects/commercial-05.jpg",
+        thumbnail: "/projects/commercials/commercial-05.jpg",
         size: "large",
     },
     {
@@ -68,7 +68,7 @@ export const projects = [
         platform: "YOUTUBE",
         videoId: "zwFXqEnzXNY",
         videoUrl: "https://www.youtube.com/watch?v=zwFXqEnzXNY",
-        thumbnail: "/projects/commercial-06.jpg",
+        thumbnail: "/projects/commercials/commercial-06.jpg",
         size: "small",
     },
     {
@@ -80,7 +80,7 @@ export const projects = [
         platform: "YOUTUBE",
         videoId: "mD0uMYnJCaU",
         videoUrl: "https://www.youtube.com/watch?v=mD0uMYnJCaU",
-        thumbnail: "/projects/commercial-07.jpg",
+        thumbnail: "/projects/commercials/commercial-07.jpg",
         size: "small",
     },
     {
@@ -92,7 +92,7 @@ export const projects = [
         platform: "YOUTUBE",
         videoId: "njNdvgmAGm4",
         videoUrl: "https://www.youtube.com/watch?v=njNdvgmAGm4",
-        thumbnail: "/projects/commercial-08.jpg",
+        thumbnail: "/projects/commercials/commercial-08.jpg",
         size: "large",
     },
     {
@@ -103,7 +103,7 @@ export const projects = [
         platform: "YOUTUBE",
         videoId: "RIdRwOHjQxw",
         videoUrl: "https://www.youtube.com/watch?v=RIdRwOHjQxw",
-        thumbnail: "/projects/commercial-09.jpg",
+        thumbnail: "/projects/commercials/commercial-09.jpg",
         size: "large",
     },
     {
@@ -114,7 +114,7 @@ export const projects = [
         platform: "VIMEO",
         videoId: "643537019",
         videoUrl: "https://vimeo.com/643537019",
-        thumbnail: "/projects/commercial-10.jpg",
+        thumbnail: "/projects/commercials/commercial-10.jpg",
         size: "small",
     },
 
@@ -130,7 +130,7 @@ export const projects = [
         platform: "YOUTUBE",
         videoId: "jEPKMGVukeA",
         videoUrl: "https://www.youtube.com/watch?v=jEPKMGVukeA",
-        thumbnail: "",
+        thumbnail: "/projects/musicvideos/music-1.jpg",
         size: "large",
     },
     {
@@ -141,7 +141,7 @@ export const projects = [
         platform: "YOUTUBE",
         videoId: "EbBbjf-QHh8",
         videoUrl: "https://www.youtube.com/watch?v=EbBbjf-QHh8",
-        thumbnail: "",
+        thumbnail: "/projects/musicvideos/music-2.jpg",
         size: "small",
     },
     {
@@ -152,18 +152,18 @@ export const projects = [
         platform: "YOUTUBE",
         videoId: "e5GXG85xQkw",
         videoUrl: "https://www.youtube.com/watch?v=e5GXG85xQkw",
-        thumbnail: "",
+        thumbnail: "/projects/musicvideos/music-3.jpg",
         size: "small",
     },
     {
         number: "14",
         title: "",
         category: "MUSIC VIDEOS",
-        role: "COSTUME DESIGNER",
+        role: "STYLIST",
         platform: "YOUTUBE",
-        videoId: "ZKKSWsS4PLc",
-        videoUrl: "https://www.youtube.com/watch?v=ZKKSWsS4PLc",
-        thumbnail: "",
+        videoId: "5pJANKl1Kko",
+        videoUrl: "https://www.youtube.com/watch?v=5pJANKl1Kko",
+        thumbnail: "/projects/musicvideos/music-9.jpg",
         size: "large",
     },
     {
@@ -172,9 +172,9 @@ export const projects = [
         category: "MUSIC VIDEOS",
         role: "COSTUME DESIGNER",
         platform: "YOUTUBE",
-        videoId: "R90bF4mJszU",
-        videoUrl: "https://www.youtube.com/watch?v=R90bF4mJszU",
-        thumbnail: "",
+        videoId: "OdUSyD5uaqE",
+        videoUrl: "https://www.youtube.com/watch?v=OdUSyD5uaqE",
+        thumbnail: "/projects/musicvideos/music-10.jpg",
         size: "large",
     },
     {
@@ -185,7 +185,7 @@ export const projects = [
         platform: "YOUTUBE",
         videoId: "SuZPQHQ8np8",
         videoUrl: "https://www.youtube.com/watch?v=SuZPQHQ8np8",
-        thumbnail: "",
+        thumbnail: "/projects/musicvideos/music-6.jpg",
         size: "small",
     },
     {
@@ -196,7 +196,7 @@ export const projects = [
         platform: "YOUTUBE",
         videoId: "IDsk2IG8kds",
         videoUrl: "https://www.youtube.com/watch?v=IDsk2IG8kds",
-        thumbnail: "",
+        thumbnail: "/projects/musicvideos/music-7.jpg",
         size: "small",
     },
     {
@@ -207,18 +207,18 @@ export const projects = [
         platform: "YOUTUBE",
         videoId: "VlJK-PSUHuk",
         videoUrl: "https://www.youtube.com/watch?v=VlJK-PSUHuk",
-        thumbnail: "",
+        thumbnail: "/projects/musicvideos/music-8.jpg",
         size: "large",
     },
     {
         number: "19",
         title: "",
         category: "MUSIC VIDEOS",
-        role: "STYLIST",
+        role: "COSTUME DESIGNER",
         platform: "YOUTUBE",
-        videoId: "5pJANKl1Kko",
-        videoUrl: "https://www.youtube.com/watch?v=5pJANKl1Kko",
-        thumbnail: "",
+        videoId: "ZKKSWsS4PLc",
+        videoUrl: "https://www.youtube.com/watch?v=ZKKSWsS4PLc",
+        thumbnail: "/projects/musicvideos/music-4.jpg",
         size: "large",
     },
     {
@@ -227,9 +227,9 @@ export const projects = [
         category: "MUSIC VIDEOS",
         role: "COSTUME DESIGNER",
         platform: "YOUTUBE",
-        videoId: "OdUSyD5uaqE",
-        videoUrl: "https://www.youtube.com/watch?v=OdUSyD5uaqE",
-        thumbnail: "",
+        videoId: "R90bF4mJszU",
+        videoUrl: "https://www.youtube.com/watch?v=R90bF4mJszU",
+        thumbnail: "/projects/musicvideos/music-5.jpg",
         size: "small",
     },
     {
@@ -240,7 +240,7 @@ export const projects = [
         platform: "YOUTUBE",
         videoId: "0S7Q_oG4kDQ",
         videoUrl: "https://www.youtube.com/watch?v=0S7Q_oG4kDQ",
-        thumbnail: "",
+        thumbnail: "/projects/musicvideos/music-11.jpg",
         size: "small",
     },
     {
@@ -251,7 +251,7 @@ export const projects = [
         platform: "YOUTUBE",
         videoId: "c_qs3KmVpZQ",
         videoUrl: "https://www.youtube.com/watch?v=c_qs3KmVpZQ",
-        thumbnail: "",
+        thumbnail: "/projects/musicvideos/music-12.jpg",
         size: "large",
     },
     {
@@ -262,7 +262,7 @@ export const projects = [
         platform: "YOUTUBE",
         videoId: "hiE8sC5GtCY",
         videoUrl: "https://www.youtube.com/watch?v=hiE8sC5GtCY",
-        thumbnail: "",
+        thumbnail: "/projects/musicvideos/music-13.jpg",
         size: "large",
     },
     {
@@ -273,7 +273,7 @@ export const projects = [
         platform: "YOUTUBE",
         videoId: "r-OOr1bd0Rs",
         videoUrl: "https://www.youtube.com/watch?v=r-OOr1bd0Rs",
-        thumbnail: "",
+        thumbnail: "/projects/musicvideos/music-14.jpg",
         size: "small",
     },
     {
@@ -284,7 +284,7 @@ export const projects = [
         platform: "YOUTUBE",
         videoId: "aYmuff1a4F4",
         videoUrl: "https://www.youtube.com/watch?v=aYmuff1a4F4",
-        thumbnail: "",
+        thumbnail: "/projects/musicvideos/music-15.jpg",
         size: "small",
     },
     {
@@ -295,7 +295,7 @@ export const projects = [
         platform: "YOUTUBE",
         videoId: "KPM3f2lrlOs",
         videoUrl: "https://www.youtube.com/watch?v=KPM3f2lrlOs",
-        thumbnail: "",
+        thumbnail: "/projects/musicvideos/music-16.jpg",
         size: "large",
     },
     {
@@ -306,7 +306,7 @@ export const projects = [
         platform: "YOUTUBE",
         videoId: "ClA85U0ko4c",
         videoUrl: "https://www.youtube.com/watch?v=ClA85U0ko4c",
-        thumbnail: "",
+        thumbnail: "/projects/musicvideos/music-17.jpg",
         size: "large",
     },
     {
@@ -317,7 +317,7 @@ export const projects = [
         platform: "YOUTUBE",
         videoId: "JkYgfaCxSXM",
         videoUrl: "https://www.youtube.com/watch?v=JkYgfaCxSXM",
-        thumbnail: "",
+        thumbnail: "/projects/musicvideos/music-18.jpg",
         size: "small",
     },
     {
@@ -328,7 +328,7 @@ export const projects = [
         platform: "YOUTUBE",
         videoId: "lTJHofgwzRg",
         videoUrl: "https://www.youtube.com/watch?v=lTJHofgwzRg",
-        thumbnail: "",
+        thumbnail: "/projects/musicvideos/music-19.jpg",
         size: "small",
     },
     {
@@ -339,7 +339,7 @@ export const projects = [
         platform: "YOUTUBE",
         videoId: "NS4f6p4o_Kw",
         videoUrl: "https://www.youtube.com/watch?v=NS4f6p4o_Kw",
-        thumbnail: "",
+        thumbnail: "/projects/musicvideos/music-20.jpg",
         size: "large",
     },
     {
@@ -350,18 +350,23 @@ export const projects = [
         platform: "YOUTUBE",
         videoId: "4TaIcDYkLxs",
         videoUrl: "https://www.youtube.com/watch?v=4TaIcDYkLxs",
-        thumbnail: "",
+        thumbnail: "/projects/musicvideos/music-21.jpg",
         size: "large",
     },
+
+    // =================================
+    // FILM
+    // =================================
+
     {
         number: "32",
-        title: "Tulevikuvaade Inspira",
+        title: "Tulevikuvaade / Inspira",
         category: "FILM",
         role: "STYLIST",
         platform: "INSTAGRAM",
         videoId: "DW8LnK4gf1M",
         videoUrl: "https://www.instagram.com/reel/DW8LnK4gf1M/?hl=en",
-        thumbnail: "/projects/film-01.jpg",
+        thumbnail: "/projects/films/film-01.jpg",
         size: "large",
     },
     {
@@ -372,7 +377,7 @@ export const projects = [
         platform: "YOUTUBE",
         videoId: "OIyU2i_xAMY",
         videoUrl: "https://www.youtube.com/watch?v=OIyU2i_xAMY&t=1s",
-        thumbnail: "",
+        thumbnail: "projects/films/film-02.jpg",
         size: "small",
     },
     {
@@ -383,7 +388,7 @@ export const projects = [
         platform: "YOUTUBE",
         videoId: "GOR4rZewZlM",
         videoUrl: "https://www.youtube.com/watch?v=GOR4rZewZlM",
-        thumbnail: "",
+        thumbnail: "projects/films/film-03.jpg",
         size: "small",
     },
     {
@@ -394,7 +399,7 @@ export const projects = [
         platform: "YOUTUBE",
         videoId: "ZKBKYe_Yka4",
         videoUrl: "https://www.youtube.com/watch?v=ZKBKYe_Yka4",
-        thumbnail: "",
+        thumbnail: "projects/films/film-04.jpg",
         size: "large",
     },
     {
@@ -405,7 +410,7 @@ export const projects = [
         platform: "YOUTUBE",
         videoId: "xMA64t1Pg40",
         videoUrl: "https://www.youtube.com/watch?v=xMA64t1Pg40",
-        thumbnail: "",
+        thumbnail: "projects/films/film-05.jpg",
         size: "small",
     },
 ];

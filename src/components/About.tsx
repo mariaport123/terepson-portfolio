@@ -16,8 +16,7 @@ export default function About() {
         </h2>
 
         <p className="about-text">
-          Fashion stylist and visual
-          creative working across
+          Fashion stylist and costume designer working across
           fashion, film, music and
           commercial imagery.
         </p>
