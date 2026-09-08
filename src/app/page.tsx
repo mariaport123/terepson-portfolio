@@ -55,7 +55,7 @@ export default function Home() {
   useEffect(() => {
     const timer = window.setTimeout(() => {
       setIntroVisible(false);
-    }, 2700);
+    }, 3200);
 
     return () => window.clearTimeout(timer);
   }, []);

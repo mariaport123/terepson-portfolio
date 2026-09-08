@@ -7,12 +7,12 @@ type CategoryOverviewProps = {
 const categories = [
   {
     name: "COMMERCIALS",
-    image: "/projects/commercials/commercial-01.jpg",
+    image: "/projects/commercials/commercial-06.jpg",
     className: "category-overview-large",
   },
   {
     name: "MUSIC VIDEOS",
-    image: "/projects/musicvideos/music-12.jpg",
+    image: "/projects/musicvideos/music-9.jpg",
     className: "category-overview-small",
   },
   {
@@ -22,7 +22,7 @@ const categories = [
   },
   {
     name: "PORTRAITS",
-    image: "/projects/portraits/541D6D4C-2010-49AE-9D93-74C8D0753EDE.JPG",
+    image: "projects/portraits/IMG_3236.JPG",
     className: "category-overview-portraits",
   },
   {

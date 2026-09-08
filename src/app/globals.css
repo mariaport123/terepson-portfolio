@@ -186,6 +186,26 @@ body {
   white-space: nowrap;
 }
 
+.main-nav a {
+  position: relative;
+}
+
+.main-nav a.active {
+  color: #8f2027;
+}
+
+.main-nav a.active::after {
+  content: "";
+  position: absolute;
+  left: -0.05rem;
+  right: -0.05rem;
+  bottom: -0.5rem;
+  height: 4px;
+
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 4' preserveAspectRatio='none'%3E%3Cpath d='M1 2.7 C18 2 34 2.8 48 2.2 C64 1.7 80 2.6 99 1.8' fill='none' stroke='%238f2027' stroke-width='1.5' stroke-linecap='round'/%3E%3C/svg%3E")
+    center / 100% 100% no-repeat;
+}
+
 .menu-button {
   display: none;
   border: 0;
@@ -323,28 +343,26 @@ body {
 }
 
 .category-overview-film {
-  grid-column: span 5;
-  aspect-ratio: 16 / 10;
+  grid-column: span 4;
+  aspect-ratio: 4 / 5;
 }
 
 .category-overview-portraits {
-  grid-column: span 7;
-  aspect-ratio: 16 / 10;
+  grid-column: span 4;
+  aspect-ratio: 4 / 5;
 }
 
 .category-overview-prints {
-  grid-column: span 12;
-  aspect-ratio: 16 / 5;
+  grid-column: span 4;
+  aspect-ratio: 4 / 5;
 }
 
 .category-overview-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(
-    to top,
-    rgba(0, 0, 0, 0.55),
-    rgba(0, 0, 0, 0) 55%
-  );
+  background: linear-gradient(to top,
+      rgba(0, 0, 0, 0.55),
+      rgba(0, 0, 0, 0) 55%);
   pointer-events: none;
 }
 
@@ -565,7 +583,7 @@ body {
   padding-top: 1rem;
 }
 
-.work-info > div:first-child {
+.work-info>div:first-child {
   min-width: 0;
 }
 
@@ -662,7 +680,7 @@ body {
   font-size: 1.4rem;
 }
 
-.site-footer > span {
+.site-footer>span {
   font-size: 0.65rem;
   letter-spacing: 0.1em;
 }
@@ -714,6 +732,36 @@ body {
     width: 70px;
     top: 47%;
     left: 61%;
+  }
+
+  .mobile-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: var(--cream);
+    border-top: 1px solid rgba(5, 5, 5, 0.15);
+    padding: 1.25rem 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    z-index: 49;
+  }
+
+  .mobile-menu a {
+    color: var(--black);
+    text-decoration: none;
+    font-size: 0.7rem;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+  }
+
+  .mobile-menu a.active {
+    color: #8f2027;
+  }
+
+  .mobile-menu a:hover {
+    color: #8f2027;
   }
 
   /* ---------------------------------
@@ -931,7 +979,7 @@ body {
     word-break: break-word;
   }
 
-  .site-footer > span {
+  .site-footer>span {
     display: block;
     margin-top: 5rem;
     font-size: 0.6rem;
