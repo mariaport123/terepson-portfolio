@@ -1,36 +1,110 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Terepson Portfolio
 
-## Getting Started
+A minimalist portfolio website for stylist and costume designer Jörgen Terepson, showcasing selected work across commercials, music videos, film, portraits and prints.
 
-First, run the development server:
+## About the project
+
+This website was designed and developed as a custom portfolio experience with an editorial, fashion-focused visual direction.
+
+The UI/UX, visual identity, layout, typography, navigation and interaction concepts were created specifically for this portfolio rather than based on a pre-existing website template.
+
+A key part of the concept is the animated opening sequence: **TEREPSON** appears immediately in large typography while Jörgen Terepson's signature is progressively drawn on screen. Once the signature finishes, the intro transitions away to reveal the portfolio. The intro was developed as a custom interaction inspired by the feeling of an editorial fashion portfolio rather than a conventional website loading screen.
+
+## Design & UX
+
+The visual direction combines:
+
+- Minimal editorial layout
+- Strong oversized typography
+- Black, white and cream tones with red accents
+- Generous whitespace
+- Grid-based portfolio galleries
+- Fullscreen image viewing
+- Responsive desktop and mobile layouts
+- Motion used selectively to create a more distinctive experience
+
+The UI/UX and interaction design were independently created for this project, including the overall page structure, navigation, category system, gallery behavior and animated intro.
+
+## Tech Stack
+
+- Next.js
+- React
+- TypeScript
+- CSS
+- Vercel
+
+## Features
+
+- Responsive portfolio layout
+- Animated introductory sequence
+- Custom animated signature
+- Category navigation
+- Commercials portfolio
+- Music Videos portfolio
+- Film portfolio
+- Portrait gallery
+- Prints gallery
+- Vimeo and YouTube video integration
+- Fullscreen image lightbox
+- Responsive mobile navigation
+- Lazy-loaded images
+- Optimized web images
+- Automatic production deployment through Vercel
+
+## Project Structure
+
+```text
+src/
+├── app/
+│   ├── page.tsx
+│   └── globals.css
+├── components/
+│   ├── Header.tsx
+│   ├── Intro.tsx
+│   ├── VideoCard.tsx
+│   ├── ImageGallery.tsx
+│   ├── CategoryOverview.tsx
+│   ├── About.tsx
+│   └── Footer.tsx
+└── data/
+    └── projects.ts
+
+public/
+├── projects/
+│   ├── commercials/
+│   ├── music-videos/
+│   ├── film/
+│   ├── portraits/
+│   └── prints/
+└── signature/
+```
+
+## Development
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Run the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Then open:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```text
+http://localhost:3000
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Deployment
 
-## Learn More
+The production website is deployed with Vercel.
 
-To learn more about Next.js, take a look at the following resources:
+Changes pushed to the `main` branch are automatically deployed to production.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Author
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Designed and developed by Maria Port

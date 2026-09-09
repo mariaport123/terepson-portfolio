@@ -50,6 +50,8 @@ export default function ImageGallery({
               height={1200}
               loading={index < 3 ? "eager" : "lazy"}
               sizes="(max-width: 700px) 100vw, 33vw"
+              draggable={false}
+              onContextMenu={(e) => e.preventDefault()}
             />
           </button>
         ))}
