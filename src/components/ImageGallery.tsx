@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { useEffect, useState } from "react";
 
 type ImageGalleryProps = {
@@ -42,10 +43,13 @@ export default function ImageGallery({
             onClick={() => setSelectedImage(src)}
             aria-label="Open image"
           >
-            <img
+            <Image
               src={src}
               alt=""
-              loading={index < 6 ? "eager" : "lazy"}
+              width={1600}
+              height={1200}
+              loading={index < 3 ? "eager" : "lazy"}
+              sizes="(max-width: 700px) 100vw, 33vw"
             />
           </button>
         ))}
@@ -67,9 +71,11 @@ export default function ImageGallery({
             ×
           </button>
 
-          <img
+          <Image
             src={selectedImage}
             alt=""
+            width={2000}
+            height={2000}
             className="image-lightbox-image"
             onClick={(event) => event.stopPropagation()}
           />
