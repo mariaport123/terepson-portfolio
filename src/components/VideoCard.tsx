@@ -124,7 +124,7 @@ export default function VideoCard({
                         rel="noopener noreferrer"
                         className="watch-link"
                     >
-                        WATCH ↗
+                        WATCH <span className="watch-arrow" aria-hidden="true">↗</span>
                     </a>
                 </div>
             </div>

@@ -621,6 +621,10 @@ body {
 }
 
 .watch-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+
   color: inherit;
   text-decoration: none;
   font-size: 0.62rem;
@@ -633,6 +637,12 @@ body {
 .watch-link:hover {
   color: #8f2027;
   text-decoration: none;
+}
+
+.watch-arrow {
+  width: 0.65rem;
+  height: 0.65rem;
+  flex: 0 0 auto;
 }
 
 /* =================================
