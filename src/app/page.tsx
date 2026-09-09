@@ -12,7 +12,7 @@ import About from "@/components/About";
 import Footer from "@/components/Footer";
 
 const portraitImages = [
-  "/projects/portraits/IMG_3236.JPG",
+  "/projects/portraits/IMG_3236-1.JPG",
   "/projects/portraits/Noep_SilverTõnisson_press_012_19082026.JPEG",
   "/projects/portraits/192831E3-0B8B-4AB1-8DB4-08CEB0EA0632.jpg",
   "/projects/portraits/541D6D4C-2010-49AE-9D93-74C8D0753EDE.JPG",
@@ -22,17 +22,18 @@ const portraitImages = [
   "/projects/portraits/IMG_0039.JPG",
   "/projects/portraits/IMG_1957.JPG",
   "/projects/portraits/Eleryn.png",
+  "/projects/portraits/473990139_1132553024895567_1025617085809235630_n.jpg",
   "/projects/portraits/Tanel.png",
   "/projects/portraits/IMG_0249.JPG",
-  "/projects/portraits/IMG_1958.PNG",
-  "/projects/portraits/IMG_1225.PNG",
+  "/projects/portraits/IMG_1958-web.jpg",
+  "/projects/portraits/IMG_1225-web.jpg",
   "/projects/portraits/IMG_2810.PNG",
   "/projects/portraits/IMG_2811.PNG",
   "/projects/portraits/IMG_3237.JPG",
-  "/projects/portraits/IMG_3238.PNG",
-  "/projects/portraits/Snapinsta.app_469096868_1743693516364895_3372938380387957484_n_1080.JPG",
-  "/projects/portraits/Snapinsta.app_469196019_1580737449224435_4308907313570392572_n_1080.JPG",
+  "/projects/portraits/IMG_3238-web.jpg",
   "/projects/portraits/IMG_0246.JPG",
+  "/projects/portraits/Snapinsta.app_469196019_1580737449224435_4308907313570392572_n_1080.JPG",
+
 ];
 
 const printImages = [

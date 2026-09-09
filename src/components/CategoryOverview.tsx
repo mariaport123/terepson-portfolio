@@ -22,7 +22,7 @@ const categories = [
   },
   {
     name: "PORTRAITS",
-    image: "projects/portraits/IMG_3236.JPG",
+    image: "projects/portraits/IMG_3236-1.JPG",
     className: "category-overview-portraits",
   },
   {

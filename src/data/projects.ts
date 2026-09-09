@@ -117,13 +117,35 @@ export const projects = [
         thumbnail: "/projects/commercials/commercial-10.jpg",
         size: "small",
     },
+    {
+        number: "11",
+        title: "Elisa – Hotell",
+        category: "COMMERCIALS",
+        role: "COSTUME DESIGNER",
+        platform: "VIMEO",
+        videoId: "271245450",
+        videoUrl: "https://vimeo.com/271245450",
+        thumbnail: "/projects/commercials/commercial-11.jpg",
+        size: "small",
+    },
+    {
+        number: "12",
+        title: "Elisa – Triplets",
+        category: "COMMERCIALS",
+        role: "COSTUME DESIGNER",
+        platform: "VIMEO",
+        videoId: "303030407",
+        videoUrl: "https://vimeo.com/303030407",
+        thumbnail: "/projects/commercials/commercial-12.jpg",
+        size: "large",
+    },
 
     // =================================
     // MUSIC VIDEOS
     // =================================
 
     {
-        number: "11",
+        number: "13",
         title: "",
         category: "MUSIC VIDEOS",
         role: "COSTUME DESIGNER",
@@ -134,7 +156,7 @@ export const projects = [
         size: "large",
     },
     {
-        number: "12",
+        number: "14",
         title: "",
         category: "MUSIC VIDEOS",
         role: "STYLIST",
@@ -145,7 +167,7 @@ export const projects = [
         size: "small",
     },
     {
-        number: "13",
+        number: "15",
         title: "",
         category: "MUSIC VIDEOS",
         role: "STYLIST",
@@ -156,7 +178,7 @@ export const projects = [
         size: "small",
     },
     {
-        number: "14",
+        number: "16",
         title: "",
         category: "MUSIC VIDEOS",
         role: "STYLIST",
@@ -167,7 +189,7 @@ export const projects = [
         size: "large",
     },
     {
-        number: "15",
+        number: "17",
         title: "",
         category: "MUSIC VIDEOS",
         role: "COSTUME DESIGNER",
@@ -178,7 +200,7 @@ export const projects = [
         size: "large",
     },
     {
-        number: "16",
+        number: "18",
         title: "",
         category: "MUSIC VIDEOS",
         role: "COSTUME DESIGNER",
@@ -189,7 +211,7 @@ export const projects = [
         size: "small",
     },
     {
-        number: "17",
+        number: "19",
         title: "",
         category: "MUSIC VIDEOS",
         role: "STYLIST",
@@ -200,7 +222,7 @@ export const projects = [
         size: "small",
     },
     {
-        number: "18",
+        number: "20",
         title: "",
         category: "MUSIC VIDEOS",
         role: "STYLIST",
@@ -211,7 +233,7 @@ export const projects = [
         size: "large",
     },
     {
-        number: "19",
+        number: "21",
         title: "",
         category: "MUSIC VIDEOS",
         role: "COSTUME DESIGNER",
@@ -222,7 +244,7 @@ export const projects = [
         size: "large",
     },
     {
-        number: "20",
+        number: "22",
         title: "",
         category: "MUSIC VIDEOS",
         role: "COSTUME DESIGNER",
@@ -233,7 +255,7 @@ export const projects = [
         size: "small",
     },
     {
-        number: "21",
+        number: "23",
         title: "",
         category: "MUSIC VIDEOS",
         role: "STYLIST",
@@ -244,7 +266,7 @@ export const projects = [
         size: "small",
     },
     {
-        number: "22",
+        number: "24",
         title: "",
         category: "MUSIC VIDEOS",
         role: "COSTUME DESIGNER",
@@ -255,7 +277,7 @@ export const projects = [
         size: "large",
     },
     {
-        number: "23",
+        number: "25",
         title: "",
         category: "MUSIC VIDEOS",
         role: "STYLIST",
@@ -266,7 +288,7 @@ export const projects = [
         size: "large",
     },
     {
-        number: "24",
+        number: "26",
         title: "",
         category: "MUSIC VIDEOS",
         role: "STYLIST",
@@ -277,7 +299,7 @@ export const projects = [
         size: "small",
     },
     {
-        number: "25",
+        number: "27",
         title: "",
         category: "MUSIC VIDEOS",
         role: "COSTUME DESIGNER",
@@ -288,7 +310,7 @@ export const projects = [
         size: "small",
     },
     {
-        number: "26",
+        number: "28",
         title: "",
         category: "MUSIC VIDEOS",
         role: "STYLIST",
@@ -299,7 +321,7 @@ export const projects = [
         size: "large",
     },
     {
-        number: "27",
+        number: "29",
         title: "",
         category: "MUSIC VIDEOS",
         role: "COSTUME DESIGNER",
@@ -310,7 +332,7 @@ export const projects = [
         size: "large",
     },
     {
-        number: "28",
+        number: "30",
         title: "",
         category: "MUSIC VIDEOS",
         role: "STYLIST",
@@ -321,7 +343,7 @@ export const projects = [
         size: "small",
     },
     {
-        number: "29",
+        number: "31",
         title: "",
         category: "MUSIC VIDEOS",
         role: "STYLIST",
@@ -332,7 +354,7 @@ export const projects = [
         size: "small",
     },
     {
-        number: "30",
+        number: "32",
         title: "",
         category: "MUSIC VIDEOS",
         role: "STYLIST",
@@ -343,7 +365,7 @@ export const projects = [
         size: "large",
     },
     {
-        number: "31",
+        number: "33",
         title: "",
         category: "MUSIC VIDEOS",
         role: "STYLIST",
@@ -359,7 +381,7 @@ export const projects = [
     // =================================
 
     {
-        number: "32",
+        number: "34",
         title: "Tulevikuvaade / Inspira",
         category: "FILM",
         role: "STYLIST",
@@ -370,7 +392,7 @@ export const projects = [
         size: "large",
     },
     {
-        number: "33",
+        number: "35",
         title: "",
         category: "FILM",
         role: "STYLIST",
@@ -381,7 +403,7 @@ export const projects = [
         size: "small",
     },
     {
-        number: "34",
+        number: "36",
         title: "",
         category: "FILM",
         role: "COSTUME DESIGNER",
@@ -392,7 +414,7 @@ export const projects = [
         size: "small",
     },
     {
-        number: "35",
+        number: "37",
         title: "",
         category: "FILM",
         role: "COSTUME DESIGNER",
@@ -403,7 +425,7 @@ export const projects = [
         size: "large",
     },
     {
-        number: "36",
+        number: "38",
         title: "",
         category: "FILM",
         role: "STYLIST ASSISTANT",
