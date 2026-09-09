@@ -1,5 +1,7 @@
 # Terepson Portfolio
 
+![Terepson Portfolio](public/screenshots/terepson-homepage.jpg)
+
 A minimalist portfolio website for stylist and costume designer Jörgen Terepson, showcasing selected work across commercials, music videos, film, portraits and prints.
 
 ## About the project
@@ -7,6 +9,8 @@ A minimalist portfolio website for stylist and costume designer Jörgen Terepson
 This website was designed and developed as a custom portfolio experience with an editorial, fashion-focused visual direction.
 
 The UI/UX, visual identity, layout, typography, navigation and interaction concepts were created specifically for this portfolio rather than based on a pre-existing website template.
+
+A key part of the concept is the animated opening sequence: **TEREPSON** appears immediately in large typography while Jörgen Terepson's signature is progressively drawn on screen. Once the signature finishes, the intro transitions away to reveal the portfolio. The intro was developed as a custom interaction inspired by the feeling of an editorial fashion portfolio rather than a conventional website loading screen.
 
 A key part of the concept is the animated opening sequence: **TEREPSON** appears immediately in large typography while Jörgen Terepson's signature is progressively drawn on screen. Once the signature finishes, the intro transitions away to reveal the portfolio. The intro was developed as a custom interaction inspired by the feeling of an editorial fashion portfolio rather than a conventional website loading screen.
 
