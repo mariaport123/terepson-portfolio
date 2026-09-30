@@ -78,7 +78,7 @@ export const projects = [
         role: "STYLIST",
         year: "",
         platform: "YOUTUBE",
-        videoId: "mD0uMYnJCaU",
+        videoId: "njNdvgmAGm4",
         videoUrl: "https://www.youtube.com/watch?v=njNdvgmAGm4",
         thumbnail: "/projects/commercials/commercial-07.jpg",
         size: "small",

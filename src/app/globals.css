@@ -202,8 +202,7 @@ body {
   bottom: -0.5rem;
   height: 4px;
 
-  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 4' preserveAspectRatio='none'%3E%3Cpath d='M1 2.7 C18 2 34 2.8 48 2.2 C64 1.7 80 2.6 99 1.8' fill='none' stroke='%238f2027' stroke-width='1.5' stroke-linecap='round'/%3E%3C/svg%3E")
-    center / 100% 100% no-repeat;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 4' preserveAspectRatio='none'%3E%3Cpath d='M1 2.7 C18 2 34 2.8 48 2.2 C64 1.7 80 2.6 99 1.8' fill='none' stroke='%238f2027' stroke-width='1.5' stroke-linecap='round'/%3E%3C/svg%3E") center / 100% 100% no-repeat;
 }
 
 .menu-button {
@@ -739,9 +738,10 @@ body {
   }
 
   .intro-signature {
-    width: 115px;
+    width: clamp(95px, 30vw, 115px);
     top: 47%;
-    left: 61%;
+    left: 76%;
+    transform: translateX(-50%);
   }
 
   .mobile-menu {
